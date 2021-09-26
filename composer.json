@@ -1,10 +1,22 @@
 {
     "name": "kurzyx/async-messenger-bundle",
     "type": "library",
+    "description": "Adds asynchronous support to Symfony's messenger component.",
     "license": "MIT",
     "require": {
         "php": ">=7.4",
-        "symfony/messenger": "^4.4|^5.0"
+        "psr/log": "^1.0|^2.0|^3.0",
+        "symfony/messenger": "^4.4|^5.0",
+        "react/event-loop": "^1.0"
+    },
+    "require-dev": {
+        "symfony/console": "^4.4|^5.0",
+        "symfony/dependency-injection": "^4.4|^5.0",
+        "symfony/http-kernel": "^4.4|^5.0",
+        "symfony/service-contracts": "^1.1|^2.0"
+    },
+    "suggest": {
+        "kurzyx/async-amqp-messenger-bundle": "Async messenger implementation for AMQP."
     },
     "autoload": {
         "psr-4": {
